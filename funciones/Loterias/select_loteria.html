@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Loterias y apuestas del Estado</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      img{
+        margin: auto;
+      }
+      .container{
+        max-width: 560px;
+        height: 10vh;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light ">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATUAAACjCAMAAADciXncAAABg1BMVEX///9fYFsBK38AAABcXVjV1dVZWlVTVE5OT0nWAABRUkxWV1GamppTU1NhYWFaW1W+vrxsbWkAkwDd3dxjZV+NjYppamS0tLLj4+L5+fl5enbt7eyen5zz+fOurqvKysn18/nRyuP98vHq6umOj4yZicPm4/C+tNiPfL6hksicyp1ermBJpky12Lba7Nrn8uc9o0Cnz6jwt7PcQTbgXlLrpaHdSj61qtPEvduLxI1Wq1ghmiTpkov43NnbMyHywLsAH3sAD3cAAHMyMjJCQzwfHx+Ld7zg2+yEj6WsvL2qs79Ih2W82b1ejXqdoLuDe7GexKV8oY+soM1nqXDY8uBodAC2lnOSdzd7hTnH2szHuqCkPwCUTgDp39VkfBrty8UxhgC+aUfMmofHPht7vH2odkmRqXHbg3XFoK2SDzd/NFuMkrZ/GkWZAC/nfHSlV2pFImZaGFk1KnS5GRyASG0oR41YWY85EGJwAUbVY2GgABxIPXnEytwrQYhvfqxZap8DNYZJqLQoAAAPtUlEQVR4nO2diZ/kRBXHK2OOmqQxCZ1059pOs2kWWJblWNhdTmeW0fVARMQDUBFFRZEVVBB1Of50671Xla70pI9Zmu2Zz9bv48fpTqqrXn1T9erVkYUxIyMjIyMjIyMjIyMjIyMjIyMjIyMjI6NvQI1zcuW7Nnrnmn3r5HJ2bfTONTDU7kCG2p0IqL183+b6rqHGiNrgBOm/bagxQ+3OZKjdiZZRm+ZsOu25bqiBeqk9wNjDF9j1a2z6wOItQw3UR236PcYeFNQewk9dGWqgY9Ruihb2cEsNPk3124Ya6Bi1BxapPTzVbxtqoAVq015q03kCQw3UpXbtZi+1h+aDgqEG6lJ7pJ/a9ettCkMNZKjdiQy1O1EvNRGlfX/IfvBD/GSoHZdG7UIuqTU/unzu/ovsuSfYKz9W1NT0ylADadQeIGqvssfuR2qPXhKfHmc/QWoXblIiQw2kUXsdqb32fJfaufvfRGqykxpqII3aI+jXHn1ikdqTSO0aJTLUQBq1BwW113qp/VRQe50SGWqgLrWfvddL7dJrhlpHnR567vlne6k9d4ldeIgSGWogjdq1fBU1Mxpo0iOP6SpqFyiRoQbSqE0vt9TeaH7+C/bLX2nU3pSHOww1kEbt8iuS2ltvv/DU/pXz+/vnn/71byS1i+cokaEG0qhdJGq/PX91v6W2/8w7vyNqlymRoQbSqD2KPfTd/Ref1qk9s/97pPYkJTLUQBq1S0BNsOpSE5/YJUHtWUpkqIE0ak8Ian/ooXb1/NuC2nuUyFADdam9/VIvtf0/Gmod6T30je/sL6G2f/7iRUpkqIE0au+98dQKao9RIkMNpFF78q3l1F78k4k8NGnUHv/zvIe+/5e/fvC3D29ebdvauzK9oQbSqL1zS1L7+0cHB3t74n+Hex+/L6ldPU+JDDWQRu0FovYh8Gp18I9/Yl+98g4lMtRAGrWnkdrHe4v6F1J7hhIZaiCN2kuC2pVPjkHbO/gUeugLlMhQA+nUxGhwnBlg+0hQu0WJDDUQULsvTYsa29q/e6nt7X2G1KoiTV821Nj83ZaKsSu3Xj1YQu3w9pUXqJ2Zd1tAGrVb//lqCbS9vU+uPGWozaVRe+qzpdD2Dv77ImP3GWpSzpg0ZOz8sv4J+p9IW8u05a6NPk26fbiC2sF01+adUn2wqq0d3t61eadUX66idvDqrs07peqZFmjUPti1eadUn6+k9sWuzTulWt3WDLV+fWr82h1o9Rh6fX0G96Sur4rXDi/s2rxTqukqap/v2rpTqxUB26Fxa8t0+8bywcD820RLtbSxmaa2QtMl1A4+2bVlp1pL+qhZ8FitPmwHBybqWKPbh4u99PDz6a6NOv2afnmjs/d+wyx2bKSbX96gBndwcHjji+muzTkzmt7+4tOv9r768oN7dAG3TOI4tqJdm3E3NEQ165I5s/UBexXYNp9swaZsKLWFvFqV1RY3CT3f8zw+W13gxPKttdRKbll8vAWTyiOPdLS9etYF5/XWcmMWyK1WpMgL7lpWspbawN0ONFYHlrXerJOo8gPb8rbY1tab13BIspaaaGrudnzazJXU7GQr+TEW2yK3u0zN34ja9pQgMfg/L9tOjneJWpNlLaWSqM1v5lm2eI4g71YvbxaSiJ80m2IfQnl2ARUNFnp8k63KZMGuUpQpPxZdauJO17zyeI1Wq4daVHDf93kyARNra0TdZZSkaFpli7vcwvpE1mg0shw24EdZlYjPibjcVBb83ueF7LA5XeB22hYxhB+OYIQp4MNIhzEBt+Y6HrLDKzPMmjku9zmO5aosyiamnyVQSCDH8GYQYJlWxfKRrEEysgSbOvXwTjCTT9pJfTQ3PoF/OUYtjz2bvEoQiKG/9pSTCaEKji9dtQffIs+2bW848URfqlzxGRpHxNUvvDjHnyg/xedwLJHY9jOWw1+30C2ChmHH1KtC/EUaQiryr8GIUYxjC0BDH25AN8iCgKwOkGHEZZn2CIpoDRLUCmVNSFHSgMvbbso21jFqba5USksNH3yGlruQxBNlRoAwiDwLqckuBReloYAjpwzgikYNPX5Qk9PsdERMH1YM86NelcLHJJVYhK1UlqDmERhW4pN20ZyZMhPKFPjztj4WUrNb8yAWidqk7urwayW1iCpJTy5MWe3LR2EHhXQQQYWdKMiJmg2tQqcm+klReAifDymNaJpF6B/NqeHDcCf019e9Il4RtChF1VKzVIvxe6jRQxiM4Q9vIAgS190iDrhoa2Eoa+D6QM3jSTHCWgmk1KRdq4h9/jXaGnKxRjU9WS8fpvIZp2lFQYhAyQbCEK+WRNDVatTIYUxkzbAGIVwpJ3NqJfJO2Rhz0N0aZA09M8dBIdGoufRARbmL1HLlBKFQcR1QkE/MxixPUxqVizQFRxpBaTkNqyVDJ4pHrId37tdKNDCIWONJC/UxVPZICkRFWZF0coF/NKcGyssc7QlnRMGdDBdGP+m9ZiHC05SoGtPAlylq4hrFQKKFLlJzZMvFDyIhIkmiTC9MjzzykjlgnjdkmENcr51SrqSWoWGigBxbGFDQ4jW0NqyiCD4I6yQ1b5zn1KaQWjMIxWCH1IWHxd5suR4fdcIIbGQu1ifQHzIaYMez2SxWBhA14QSp9sL/LFIjTzGrI2hron2m2CcDTw3jnXgNJlc+D2U9E+yqgRjxTxLOLVAbeopaIp+rTg3JWGEQuNT8iBqN9i21Wo1fVMOmHVIDvSdm6L4yCAo6bo26rO26lAm2OqQm2gW1W3FpkZr8kbQrECaoMnGo71BLlaOmS5Wavtn8BPO3pdQsBWSxrSnZlqTmMp1aSQGCzyU1NubhnOFc8JDdCLuSbk9hWx25uUatcldRU+JaOCH6QZfaBH/icVVPMTqopHzz1kYAZnJxpilbatRDow416m1W6IJCW/aMokONIgbhcltO2cyTUV6oFUyd3KbRpVXeqb+sWKqCEBobUyrDXeihyi5XUBOhK6dRHK3TqOG1OCNXiJdEUE9JT7BYINsNLc2IwdeSsJr2YRA1dMsYDWhuCK2VtVbUCuXNPa11NRF2eC1go7xsa8GtUXgo+logw1aoSqo6/8imK0StotURQW3o9VQ6m6joQvpDuE/xYS0XVpSrG1Y4ZG0eenS7w4wKsOMGXQjG5jSGikecMmqJCc3Z6ryXWkKDI90TGToVoqImqBWcq37bcWvUB9M6iqKaTElU5BHW5IME5YqMm2AbgniNblBGTsnGNPDIcVp1+6AYlUP13NWwOqhbDO7m/+2FRWq1T21v3mZVbA1RLg5OtpdWVeH5/dQobEwHnszQ4TweVIXWl6WkB+suB8Va6yNvJRo5UbMC4uw3ylO4mANQI55+UVVpeCSocfgY44g/ULaJlH5OMYJdFWoMFT05rQYUc24esC1S68yo1DSQvhVMNjYY4sRkpZ8atQObagTUPJEPfeuupkpn1BkiNG+gRiaRJVFTM8sCprb0eZRIanlot3aJCYDgjR8tnCnMJ9NeLls4JQdqYlZhu2SytTG049TyQs08Xdnkh7w1V5uK20E/tZKGLz62VVtTP1jYU2jk3E1/wpIkfaGRQRSbkhujrxz8QyKfgqLGmqB92CLBuK2CfFAjuiuATqix2WM5wqTqd6q2G4l3hADGtu8Fnu9XyndH+N3DSpcz7olvYlQUTX98BD+Syznw+UikGdq+iC8n7IgybFLYmoCIc3Fgx94IHW6ugs8zVN+OcjnVH4psfAvrVibCClEGJggQceX7aJcnpk1OwfELT2Xm5YjDYFeIGk24yCVpajRXTApjrI/vVV972bVx6rpD3qmd+fdhXdfDVat4w7r7n8eD7BZnVEJpO8atEVGLwIx220oYsZhjBnapZ5BBmd2b0oTcqbubX9libU+tSmiT2DE2CJJSRe1e1+TIJ9/jb/CUDTUpNQfaKLI01KQkNVyTXitDTWrCXdsOcWdivVJfzK+4ocbKqCqKdLzZaO9EoLMxzBkZnU4NcSpwtOT6CaZ4mxcWbDfTXQhXtDvLjiRaONQmAFFH/aejmknRe72TqbWtszM71MbUwkCT1zefigoeGGpdap1FFvs4HYcHdt/1Y5kaappqr//6sUzvQWp2iAqO99B7hVpW1+UCtWFdOzRX6qdmFwPUrGqzUD+oO2vlOSxL6es4GawQdahhkrMWAufCd3t83MyplSmnZUjA0E8t0MfOcgYLioHnc4dNjuQElR8JoFkBOcGdGSEtYygsyubUGlFY0FlDPRNKaN+CNpiBmqP23l2Ymq+nlrWL116t9lHkwlvtq28hrijlNhbm094EUJtv9J9oBXvXUtUk40Om9t49uavWT82dDB1UqRbCw9AFlgvUvHbXBPdCqk5hSXtQTbrKs9PapMXypGLYbvkOYcfXd5aNBq7cto7keRxrUM2SI0FN7eYEPlDDHbrClw2RyV0tWViidgdDOroRbOMNkbsiqnOYOrLFsJxLZ46Htao1kUcQyVN+2LuyjDkTOjcfjyewQU4n3mhrfSAHAXfm4B68oEbtOhyUcm91NwxOLnqjIsjp3ISghn/DCYUigtZm1OxiLIfQxcgjHzrDUp7ik8cumSwskX/9RprBz8o/cTdWG5g5NTp1YKaq8MiDv5SajfJUD7XF0Bjj1l+HmgODqEfHQQs6fonHcOVBRMLIVSjibfXFq29QbUUY16hBEEvncvMl1EZFjKq1zX4bl2t1amMuRwJrfgALbuWSGj0zrmLsbb6H8Y2Kxjzhl/MONdmU7GXU9Mgjjz3FTfR0nRodGPTCuEMtnre1s0pNnpZUJzSkX7PilFRsQA1enAh8dVpFpybf12DqdNdYHTJUUS65M1/10E12CU+FCBIcjpJRLg5r+lssy+K17iugdPILD5bRsNKwHDfnkZ/smXRLJBrIE67yFPFwPk6cDVHHtOSJWIjXkvmhpnzcrInXfC/PR3iUvT2F58jz8SJeo3hCDjmCGgUaliePZAm/ID1eTYWf4IWBHas9RyvjNfmaR+DFsZhLZmsiD8vKcxtem7CwsWiHDCHWo4MgduxJvyanEZZ8N0VQG8ujlXiVn5UhlLXHrRPEB/PQImxr5i9taxq1FrnlY3Avn4OgNlYvEyWSmpyX2nGhTkHHYZuTd4I3enauGVaN1wW8IoYbIEX7EhHP5AtiOjW7ozyX/c1y5dF1h8INT3xLKHyJYvWKWkqFOVgYUJu/K7fmLfTTponn+3zMUoy/8EpdyFcdxYRoCP/wQqwtMsZd5SxKQ0jupaqD1fAupZ8KH5fPuM/tmmFwh15rAhlHdIEKk+9lpmcl6mjVHH+fpsmaE0xv8mbxLdf2a7aYd29hZ2UqZWRkZGRkZGRkZGRkZGRkZGRkZGRkZHRq9H9TfpUZGN5/TwAAAABJRU5ErkJggg=="
+        height="250"
+        alt="lot Logo"
+      />
+    </nav>
+    <div class="container border border-secondary rounded">
+        <h3>Elige que apuesta hacer:</h3>
+
+        <a href="primitiva.php" class="btn btn-info m-2">Primitiva</a>
+        <a href="euromillon.php" class="btn btn-warning m-2">Euromillon</a>
+    </div>
+  </body>
+</html>
