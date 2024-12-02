@@ -59,8 +59,30 @@ class libro{
             die($e->getMessage());
         }
     }
-}
 
+    public function save($titulo, $descripcion, $creacion){
+        try{
+            $registro = $this -> pdo -> prepare("INSERT INTO libros(titulo, descripcion, creacion) VALUES(:titulo, :descripcion, :creacion)");
+            $registro -> bindParam(':descripcion', $descripcion);
+            $registro -> bindParam(':titulo', $titulo);
+            $registro -> bindParam(':creacion'  , $creacion);
+            return $registro -> execute();
+        }
+        catch(PDOException $e){
+            die ($e -> getMessage());
+        }
+    }
+
+    public function update($id, $titulo, $descripcion, $creacion){
+        $consulta = "UPDATE libros SET titulo = :titulo, descripcion = :descripcion, creacion = :creacion WHERE id = :id";
+        $registro = $this -> pdo -> prepare($consulta);
+        $registro -> bindParam(':id', $id);
+        $registro -> bindParam(':titulo', $titulo);
+        $registro -> bindParam(':descripcion', $descripcion);
+        $registro -> bindParam(':creacion', $creacion);
+        return $registro -> execute();
+    }
+}
 
 
 ?>
