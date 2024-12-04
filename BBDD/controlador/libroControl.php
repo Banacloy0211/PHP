@@ -5,11 +5,11 @@ class libroControl{
     private $libromodelo;
 
     public function __construct(){
-        $this -> libromodelo = new libro();
+        $this->libromodelo = new libro();
     }
 
     public function indice(){
-        $libros = $this -> libromodelo -> getAll();
+        $libros = $this->libromodelo->getAll();
         require "vista/listar.php";
     }
 
@@ -18,7 +18,7 @@ class libroControl{
             $titulo = $_POST['titulo'];
             $descripcion = $_POST['descripcion'];
             $creacion = $_POST['creacion'];
-            $this -> libromodelo -> save($titulo, $descripcion, $creacion);
+            $this->libromodelo->save($titulo, $descripcion, $creacion);
             header("Location: index.php");
         }
         else{
@@ -31,17 +31,17 @@ class libroControl{
             $titulo = $_POST['titulo'];
             $descripcion = $_POST['descripcion'];
             $creacion = $_POST['creacion'];
-            $this -> libromodelo ->update($id, $titulo, $descripcion, $creacion);
+            $this->libromodelo->update($id, $titulo, $descripcion);
             header("Location: index.php");
         }
         else{
-            $libro = $this -> libromodelo -> getById($id);
+            $libro = $this->libromodelo->getById($id);
             require "vista/editar.php";
         }
     }
 
     public function delete($id){
-        $this -> libromodelo -> delete($id);
+        $this->libromodelo->delete($id);
         header("Location: index.php");
     }
 }

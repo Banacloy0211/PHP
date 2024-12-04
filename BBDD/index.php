@@ -1,19 +1,19 @@
 <?php
     require_once "controlador/libroControl.php";
-    $libro = new libroControl();
+    $index = new libroControl;
     $action = $_GET['action'] ?? null;
     $id = $_GET['id'] ?? null;
-    if ($action == 'crear'){
-        $libro -> create($id);
+    if ($action == 'create'){
+        $index->create();
     }
-    else if ($action == 'editar'){
-        $libro -> edit($id);
+    else if ($action == 'edit'){
+        $index->edit($id);
     }
-    else if ($action == 'eliminar'){
-        $libro -> delete($id);
+    else if ($action == 'delete'){
+        $index->delete($id);
     }
     else{
-        $libro -> indice();
+        $index->indice();
     }
 
 ?>
